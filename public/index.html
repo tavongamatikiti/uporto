@@ -131,6 +131,67 @@
       </div>
     </div>
 
+    <!--    Navbar-->
+    <div class="bg-gray-400 shadow-sm mt-0">
+      <nav
+        class="container mx-auto px-4 flex items-center justify-between py-6"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a
+            href="#"
+            class="text-2xl font-bold hover:opacity-80 transition-opacity"
+          >
+            <img
+              src="assets/f5a5f6e8-87a0-48fd-a38b-768eebac13d5.svg"
+              alt="Swoosh Logo"
+              class="w-full"
+            />
+          </a>
+        </div>
+
+        <div
+          class="flex-1 hidden md:flex justify-end items-center space-x-6 text-xl"
+        >
+          <a href="#" class="text-base uppercase hover:text-gray-500">
+            New &amp; Featured
+          </a>
+          <a href="#" class="text-base uppercase hover:text-gray-500">Men</a>
+          <a href="#" class="text-base uppercase hover:text-gray-500">Women</a>
+          <a href="#" class="text-base uppercase hover:text-gray-500">Kids</a>
+
+          <form
+            class="flex items-center space-x-2"
+            id="form-search"
+            method="get"
+            action="https://www.up.pt/portal/en/search/"
+          >
+            <div class="relative">
+              <!-- Input Field -->
+              <input
+                id="searchInput"
+                name="query"
+                type="text"
+                placeholder="Search"
+                required
+                title="Search"
+                class="border-none text-black py-2 pl-3 pr-10 bg-transparent w-64"
+              />
+              <!-- Search Icon Inside Input -->
+              <button
+                type="submit"
+                class="absolute top-0 right-0 h-full px-3 text-gray-600 hover:text-blue-500"
+              >
+                <i class="fas fa-search"></i>
+                <span class="sr-only">Search</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <!--    Navbar-->
+
     <script src="./index.js"></script>
   </body>
 </html>
