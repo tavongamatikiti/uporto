@@ -6,10 +6,8 @@ dropdownTriggers.forEach((trigger) => {
     const parentDropdown = trigger.closest(".dropdown"); // Find the parent .dropdown
     const dropdownMenu = parentDropdown.querySelector(".dropdown-menu"); // Get the corresponding menu
 
-    // Toggle the visibility of the dropdown menu
     dropdownMenu.classList.toggle("hidden");
 
-    // Close other open dropdowns
     document.querySelectorAll(".dropdown-menu").forEach((menu) => {
       if (menu !== dropdownMenu) {
         menu.classList.add("hidden");
@@ -18,7 +16,6 @@ dropdownTriggers.forEach((trigger) => {
   });
 });
 
-// Close dropdowns when clicking outside
 document.addEventListener("click", (event) => {
   dropdownTriggers.forEach((trigger) => {
     const parentDropdown = trigger.closest(".dropdown");
